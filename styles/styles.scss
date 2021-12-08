@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    background-color: rgba(80, 208, 250, 0.735);
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    border: none;
+    padding: 0;
+
+}
+
+.navbar-brand {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 43px;
+}
+
+.banner {
+    background-color: lightgreen;
+    width: 100vw;
+    height: 100vh;
+}
+
+.destinos {
+    padding-top: 80px;
+}
+
+.figure-caption {
+    font-size: 20px;
+}
