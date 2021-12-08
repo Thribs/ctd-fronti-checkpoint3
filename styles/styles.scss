@@ -1,3 +1,5 @@
+$tf-lightblue: rgba(80, 208, 250, 0.735);
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 }
 
 .container-fluid {
-    background-color: rgba(80, 208, 250, 0.735);
+    background-color: $tf-lightblue;
 }
 
 .navbar {
