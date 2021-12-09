@@ -6,8 +6,8 @@
     text-align: center;
     scroll-behavior: smooth;
   }
-  
-  .container-fluid {
+
+.container-fluid {
     background-color: rgba(80, 208, 250, 0.735);
   }
   
@@ -23,6 +23,19 @@
     font-size: 43px;
   }
   
+.aviao {
+  transition: 1s;
+  position: fixed;
+}
+
+.aviao:hover {
+  padding-left: 100%;
+  margin-bottom: 90%;
+}
+
+
+
+
   .banner {
     background-image: url(/ctd-fronti-checkpoint3/img/banner.jpg);
     width: 100vw;
@@ -71,9 +84,13 @@
     font-size: 20px;
   }
 
-  @media (max-width: 1200px) {
-    p {
-        font-size: 16px;
+  .btn-primary {
+    background-color: rgba(80, 208, 250, 0.735);;
+    color: rgb(26, 8, 77);
+  }
+
+  @media (max-width: 900px) {
+    .detalhes p {
+        font-size: 12px;
         font-family: 'Darker Grotesque', sans-serif;
     }
-}
