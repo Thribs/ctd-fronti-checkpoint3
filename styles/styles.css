@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   scroll-behavior: smooth;
 }
@@ -24,10 +24,55 @@
 }
 
 .banner {
-  background-image: url(../img/banner.png);
-  background-color: lightgreen;
+  background-image: url(/img/banner.jpg);
   width: 100vw;
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.banner .detalhes {
+  background-color: rgba(119, 136, 153, 0.653);
+  width: 75vw;
+  height: 75vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.banner .detalhes h1 {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 50px;
+  color: #2e2259;
+  background-color: rgba(80, 208, 250, 0.735);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+.banner .detalhes p {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 24px;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 20px;
+  color: #2e2259;
+  background-color: rgba(80, 208, 250, 0.735);
 }
 
 .destinos {
@@ -36,5 +81,29 @@
 
 .figure-caption {
   font-size: 20px;
+}
+
+footer {
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+footer .student-showcase {
+  color: #b6b6b6;
+}
+
+footer .student-showcase h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 16px;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
