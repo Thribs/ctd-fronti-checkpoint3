@@ -24,6 +24,35 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
     font-family: 'Grechen Fuemen', cursive;
     font-size: 43px;
   }
+
+  // @TODO: improve method for avoiding the header form hiding content
+  main {
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    min-height: 80vh;
+
+    p {
+      padding: 20px 10px;
+      text-align: left;
+    }
+  }
+
+  .form-content {
+    background: url(/img/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      background: rgb(179, 179, 179);
+      width: 60%;
+
+      padding: 40px 20px;
+
+      border-radius: 20px;
+    }
+  }
   
   .banner {
     background-image: url(/img/banner.jpg);
@@ -76,8 +105,7 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
   footer {
     background: #000;
 
-    position: absolute;
-    bottom: 0;
+
     width: 100%;
     padding: 20px 10px;
 
