@@ -181,4 +181,22 @@
     opacity: .5;
   }
 }
+
+footer {
+  background: rgba(0, 0, 0, 0.818);
+  width: 100%;
+  padding: 20px 10px;
+}
+
+footer h1 {
+  padding-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgba(213, 210, 210, 0.222);
+}
+
+footer .student-showcase {
+  color: #b6b6b6;
+  padding-bottom: 40px;
+}
 /*# sourceMappingURL=styles.css.map */

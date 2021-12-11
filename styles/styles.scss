@@ -10,7 +10,7 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
     font-family: 'Darker Grotesque', sans-serif;
   }
 
-.container-fluid {
+  .container-fluid {
     background-color: rgba(80, 208, 250, 0.735);
   }
   
@@ -26,12 +26,11 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
     font-family: 'Grechen Fuemen', cursive;
     font-size: 43px;
   }
-
+  
   // @TODO: improve method for avoiding the header form hiding content
   main {
     padding-top: 80px;
     padding-bottom: 20px;
-
     min-height: 80vh;
 
     p {
@@ -41,7 +40,7 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
   }
 
   .form-content {
-    background: url(/img/banner.png);
+    background: url(/ctd-fronti-checkpoint3/img/banner.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +75,7 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
 
   .banner {
     background-attachment: fixed;
-    background-image: url(/img/banner.jpg);
+    background-image: url(ctd-fronti-checkpoint3/img/banner.jpg);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -205,24 +204,20 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
   }
   
   footer {
-    background: #000;
-
-
+    background: rgba(0, 0, 0, 0.818);
     width: 100%;
     padding: 20px 10px;
 
+    h1 {
+      padding-top: 10px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: rgba(213, 210, 210, 0.222);
+    }
+
       .student-showcase {
-
         color: rgb(182, 182, 182);
-
-        h1 {
-          font-size: 1.6rem;
-          font-weight: 600;
-        }
-        p {
-          
-        }
+        padding-bottom: 40px;
       }
+
   }
-
-

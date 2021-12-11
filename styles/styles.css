@@ -37,7 +37,7 @@ main p {
 }
 
 .form-content {
-  background: url(/img/banner.png);
+  background: url(/ctd-fronti-checkpoint3/img/banner.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,7 @@ main p {
 
 .banner {
   background-attachment: fixed;
-  background-image: url(/img/banner.jpg);
+  background-image: url(ctd-fronti-checkpoint3/img/banner.jpg);
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
@@ -235,17 +235,20 @@ main p {
 }
 
 footer {
-  background: #000;
+  background: rgba(0, 0, 0, 0.818);
   width: 100%;
   padding: 20px 10px;
 }
 
-footer .student-showcase {
-  color: #b6b6b6;
-}
-
-footer .student-showcase h1 {
+footer h1 {
+  padding-top: 10px;
   font-size: 1.6rem;
   font-weight: 600;
+  color: rgba(213, 210, 210, 0.222);
+}
+
+footer .student-showcase {
+  color: #b6b6b6;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
