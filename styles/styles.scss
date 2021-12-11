@@ -3,39 +3,79 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: center;
     scroll-behavior: smooth;
-}
-
-.container-fluid {
-    background-color: $tf-lightblue;
-}
-
-.navbar {
+  }
+  
+  .container-fluid {
+    background-color: rgba(80, 208, 250, 0.735);
+  }
+  
+  .navbar {
     position: fixed;
     width: 100vw;
     border: none;
     padding: 0;
-
-}
-
-.navbar-brand {
+  }
+  
+  .navbar-brand {
     font-family: 'Grechen Fuemen', cursive;
     font-size: 43px;
-}
-
-.banner {
-    background-image: url(../img/banner.png);
-    background-color: lightgreen;
+  }
+  
+  .banner {
+    background-image: url(/ctd-fronti-checkpoint3/img/banner.jpg);
     width: 100vw;
     height: 100vh;
-}
-
-.destinos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding-top: 80px;
-}
+    .detalhes {
+        background-color: rgba(119, 136, 153, 0.653);
+        width: 75vw;
+        height: 75vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        h1 {
+            font-family: 'Grechen Fuemen', cursive;
+            font-size: 50px;
+            color: rgb(46, 34, 89);
+            background-color: rgba(80, 208, 250, 0.735);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 50px;
+        }
 
-.figure-caption {
+        p {
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 24px;
+            padding: 20px;
+            margin: 50px;
+            border-radius: 20px;
+            color: rgb(46, 34, 89);
+            background-color: rgba(80, 208, 250, 0.735);
+        }
+    }
+  }
+  
+  .destinos {
+    padding-top: 80px;
+  }
+  
+  .figure-caption {
     font-size: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    p {
+        font-size: 16px;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
 }
