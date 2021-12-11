@@ -45,12 +45,29 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
     align-items: center;
 
     form {
-      background: rgb(179, 179, 179);
-      width: 60%;
+      background: rgb(50, 177, 219);
+      width: 30%;
 
       padding: 40px 20px;
 
       border-radius: 20px;
+
+      font-family: 'Darker Grotesque', sans-serif;
+      font-size: 1.6rem;
+
+      .form-label {
+        font-size: 1.2em;
+      }
+
+      .fields-center {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .btn {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
     }
   }
   
