@@ -25,9 +25,61 @@
   font-size: 43px;
 }
 
+main {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  min-height: 80vh;
+}
+
+main p {
+  padding: 20px 10px;
+  text-align: left;
+}
+
+.form-content {
+  background: url(/img/banner.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-content form {
+  background: #32b1db;
+  width: 30%;
+  padding: 40px 20px;
+  border-radius: 20px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 1.6rem;
+}
+
+.form-content form .form-label {
+  font-size: 1.2em;
+}
+
+.form-content form .fields-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-content form .btn {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .banner {
-  background-image: url(/ctd-fronti-checkpoint3/img/banner.jpg);
   background-attachment: fixed;
+  background-image: url(/img/banner.jpg);
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
@@ -180,5 +232,20 @@
             transform: translate(100vw, -100vh);
     opacity: .5;
   }
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+footer .student-showcase {
+  color: #b6b6b6;
+}
+
+footer .student-showcase h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=styles.css.map */

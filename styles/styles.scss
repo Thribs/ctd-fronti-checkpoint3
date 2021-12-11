@@ -26,11 +26,57 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
     font-family: 'Grechen Fuemen', cursive;
     font-size: 43px;
   }
+
+  // @TODO: improve method for avoiding the header form hiding content
+  main {
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    min-height: 80vh;
+
+    p {
+      padding: 20px 10px;
+      text-align: left;
+    }
+  }
+
+  .form-content {
+    background: url(/img/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      background: rgb(50, 177, 219);
+      width: 30%;
+
+      padding: 40px 20px;
+
+      border-radius: 20px;
+
+      font-family: 'Darker Grotesque', sans-serif;
+      font-size: 1.6rem;
+
+      .form-label {
+        font-size: 1.2em;
+      }
+
+      .fields-center {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .btn {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+  }
   
 
   .banner {
-    background-image: url(/ctd-fronti-checkpoint3/img/banner.jpg);
     background-attachment: fixed;
+    background-image: url(/img/banner.jpg);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -158,3 +204,25 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
       }
   }
   
+  footer {
+    background: #000;
+
+
+    width: 100%;
+    padding: 20px 10px;
+
+      .student-showcase {
+
+        color: rgb(182, 182, 182);
+
+        h1 {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+        p {
+          
+        }
+      }
+  }
+
+
