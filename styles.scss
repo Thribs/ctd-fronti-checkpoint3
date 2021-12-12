@@ -27,9 +27,15 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
     font-size: 43px;
   }
   
+  .d-flex {
+    padding-bottom: 10px;
+  }
+
+    // @TODO: improve method for avoiding the header form hiding content
+
 
   .banner {
-    background-image: url(/ctd-fronti-checkpoint3/img/banner.jpg);
+    background-image: url(img/banner.jpg);
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
@@ -89,7 +95,6 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
       animation-duration: 5s;
       animation-iteration-count: infinite;
       opacity: 0;
-
   }
   
   
@@ -178,5 +183,8 @@ $tf-lightblue: rgba(80, 208, 250, 0.735);
 
   }
 
-
+.form-content {
+  padding: 0;
+  margin: 0;
+}
 
