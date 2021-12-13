@@ -12,7 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Darker+Grotesque:wght@500&family=Faster+One&family=Grechen+Fuemen&family=Happy+Monkey&family=Loved+by+the+King&family=Sedgwick+Ave+Display&display=swap");
     </style>
@@ -20,104 +20,53 @@
   </head>
   <body>
     <header>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">TripFix</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#destinos">Destinos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contato
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="mailto:contato@tripflix.com"
-                      >Email</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://wa.me/5511912345678"
-                      target="_blank"
-                      rel="noopener norefer"
-                      >WhatsApp</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/contato.html?message=Quero+agendar+uma+visita"
-                      >Agende uma visita</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Eventos (em breve)</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Destino"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-            <!-- login modal -->
-            <button type="button" class="btn btn-outline-dark mx-3" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm">
-              Login
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">TripFix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-  
-            <div class="modal bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                  <h1>Login</h1>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html#destinos">Destinos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contato
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="mailto:contato@tripfix.com">Email</a></li>
+                    <li><a class="dropdown-item" href="https://wa.me/5511912345678" target="_blank" rel="noopener norefer">WhatsApp</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../contato.html?message=Quero+agendar+uma+visita">Agende uma visita (virtual)</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Eventos (em breve)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../login.html">Passaporte (Login)</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Destino" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
     <main>
       <h1>Lake Louise</h1>
-      <img class="locale-img" src="https://source.unsplash.com/random/1200x800?lake+louise" alt="Lake Louise">
-      <p class="locale-description">O lago Louise (em inglês, Lake Louise) é um lago do Parque Nacional de Banff, na província de Alberta, no Canadá. A cor esmeralda da água vem de partículas de rochas conduzidas ao lago por águas derretidas das geleiras que sobrelevam o lago. Há atividades de recreação na área, tais como caminhadas pela região, escalada de blocos e esqui.</p>
-      <p>Fonte: Wikipedia, a enciclopédia livre</p>
+      <img class="locale-img img-fluid rounded" src="https://source.unsplash.com/random/1200x800?lake+louise" alt="Lake Louise">
+      <p class="locale-description">O lago Louise (em inglês, Lake Louise) é um lago do Parque Nacional de Banff, na província de Alberta, no Canadá. A cor esmeralda da água vem de partículas de rochas conduzidas ao lago por águas derretidas das geleiras que sobrelevam o lago. Há atividades de recreação na área, tais como caminhadas pela região, escalada de blocos e esqui.</br></br>
+      <a href="https://pt.wikipedia.org/wiki/Lago_Louise" target="_blank" rel="noopener noreferrer"> Fonte: Wikipedia, a enciclopédia livre</p>
       <a href="https://earth.google.com/web/search/Lake+Louise,+Lake+Louise+Lakeshore+Trail,+AB,+Canada/@51.4116775,-116.2337154,1812.52748984a,629.26022891d,35y,0h,45t,0r/data=Cp8BGnUSbwolMHg1Mzc3NWRhNzBmM2MyYjM1OjB4NDQ2NjljNGE0M2ViN2U3ZhnWnw51abVJQCEgsHJoEQ5dwCo0TGFrZSBMb3Vpc2UsIExha2UgTG91aXNlIExha2VzaG9yZSBUcmFpbCwgQUIsIENhbmFkYRgCIAEiJgokCch2vmXZwElAEQKGKFsfrElAGUsFd7kGDV3AIaLKNZx3F13AKAI" target="_blank" rel="noopener noreferrer"><button ty class="btn btn-outline-success">Visitar este local</button></a>
     </main>
 
@@ -126,23 +75,23 @@
         <div class="col-sm-4 col-12 student-showcase">
           <h1>Daniel Fontoura</h1>
           <p>Pessoa desenvolvedora</p>
-          <a href=""><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href=""><img src="/img/icons/github.svg" alt="Github" /></a>
+          <a href="https://www.linkedin.com/in/daniel-sciacco-fontoura-44988b10/"><img src="/ctd-fronti-checkpoint3/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/dsf7/ctd-fronti-checkpoint3"><img src="/ctd-fronti-checkpoint3/img/icons/github.svg" alt="Github" /></a>
         </div>
         <div class="col-sm-4 col-12 student-showcase">
           <h1>Raquel França</h1>
           <p>Pessoa desenvolvedora</p>
-          <a href=""><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href=""><img src="/img/icons/github.svg" alt="Github" /></a>
+          <a href=""><img src="/ctd-fronti-checkpoint3/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/Raqfranca"><img src="/ctd-fronti-checkpoint3/img/icons/github.svg" alt="Github" /></a>
         </div>
         <div class="col-sm-4 col-12 student-showcase">
           <h1>Thiago Silva</h1>
           <p>Pessoa desenvolvedora</p>
-          <a href=""><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href=""><img src="/img/icons/github.svg" alt="Github" /></a>
+          <a href=""><img src="/ctd-fronti-checkpoint3/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/Thribs/ctd-fronti-checkpoint3"><img src="/ctd-fronti-checkpoint3/img/icons/github.svg" alt="Github" /></a>
         </div>
         <div class="col">
-          <h1>CTD - Frontend I - Checkpoint III</h1>
+          <h1>CTD - Front End I - Checkpoint III</h1>
         </div>
       </section>
     </footer>

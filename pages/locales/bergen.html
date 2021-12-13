@@ -12,7 +12,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Darker+Grotesque:wght@500&family=Faster+One&family=Grechen+Fuemen&family=Happy+Monkey&family=Loved+by+the+King&family=Sedgwick+Ave+Display&display=swap");
     </style>
@@ -20,104 +20,52 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">TripFix</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#destinos">Destinos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contato
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="mailto:contato@tripflix.com"
-                      >Email</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://wa.me/5511912345678"
-                      target="_blank"
-                      rel="noopener norefer"
-                      >WhatsApp</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/contato.html?message=Quero+agendar+uma+visita"
-                      >Agende uma visita</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Eventos (em breve)</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Destino"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-            <!-- login modal -->
-            <button type="button" class="btn btn-outline-dark mx-3" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm">
-              Login
-            </button>
-  
-            <div class="modal bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                  <h1>Login</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">TripFix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html#destinos">Destinos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contato
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="mailto:contato@tripfix.com">Email</a></li>
+                    <li><a class="dropdown-item" href="https://wa.me/5511912345678" target="_blank" rel="noopener norefer">WhatsApp</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../contato.html?message=Quero+agendar+uma+visita">Agende uma visita (virtual)</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Eventos (em breve)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../login.html">Passaporte (Login)</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Destino" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
       <h1>Bergen</h1>
-      <img class="locale-img" src="https://source.unsplash.com/random/1200x800?bergen" alt="Bergen">
-      <p class="locale-description">Bergen ou Berga (historicamente Bjørgvin) é a segunda maior cidade da Noruega, com uma população de aproximadamente 250 mil habitantes. A cidade está cercada por sete montanhas, o que lhe confere uma bela paisagem, mas também altos índices de precipitação, já que as montanhas servem como barreira natural para as nuvens do Mar do Norte.</p>
-      <p>Fonte: Wikipedia, a enciclopédia livre</p>
+      <img class="locale-img img-fluid rounded" src="https://source.unsplash.com/random/1200x800?bergen" alt="Bergen">
+      <p class="locale-description">Bergen ou Berga (historicamente Bjørgvin) é a segunda maior cidade da Noruega, com uma população de aproximadamente 250 mil habitantes. A cidade está cercada por sete montanhas, o que lhe confere uma bela paisagem, mas também altos índices de precipitação, já que as montanhas servem como barreira natural para as nuvens do Mar do Norte.</br></br>
+        <a href="https://pt.wikipedia.org/wiki/Bergen" target="_blank" rel="noopener noreferrer"> Fonte: Wikipedia, a enciclopédia livre</p>
       <a href="https://earth.google.com/web/search/Bergen,+Noruega/@60.3651855,5.42917055,393.56805113a,73567.70048006d,35y,0h,0t,0r/data=CnoaUBJKCiUweDQ2MzkwZDQ5NjY3NjdkNzc6MHg5ZTQyYTAzZWI0ZGUwYTA4GRkSQeYUMk5AIbEh7qDISRVAKg9CZXJnZW4sIE5vcnVlZ2EYAiABIiYKJAllQL6aQalBQBEoZBbzqaNBQBlAUvI1V-Y4QCHMiHBf1dc4QA" target="_blank" rel="noopener noreferrer"><button ty class="btn btn-outline-success">Visitar este local</button></a>
     </main>
 
@@ -126,23 +74,23 @@
         <div class="col-sm-4 col-12 student-showcase">
           <h1>Daniel Fontoura</h1>
           <p>Pessoa desenvolvedora</p>
-          <a href=""><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href=""><img src="/img/icons/github.svg" alt="Github" /></a>
+          <a href="https://www.linkedin.com/in/daniel-sciacco-fontoura-44988b10/"><img src="/ctd-fronti-checkpoint3/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/dsf7/ctd-fronti-checkpoint3"><img src="/ctd-fronti-checkpoint3/img/icons/github.svg" alt="Github" /></a>
         </div>
         <div class="col-sm-4 col-12 student-showcase">
           <h1>Raquel França</h1>
           <p>Pessoa desenvolvedora</p>
-          <a href=""><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href=""><img src="/img/icons/github.svg" alt="Github" /></a>
+          <a href=""><img src="/ctd-fronti-checkpoint3/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/Raqfranca"><img src="/ctd-fronti-checkpoint3/img/icons/github.svg" alt="Github" /></a>
         </div>
         <div class="col-sm-4 col-12 student-showcase">
           <h1>Thiago Silva</h1>
           <p>Pessoa desenvolvedora</p>
-          <a href=""><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href=""><img src="/img/icons/github.svg" alt="Github" /></a>
+          <a href=""><img src="/ctd-fronti-checkpoint3/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/Thribs/ctd-fronti-checkpoint3"><img src="/ctd-fronti-checkpoint3/img/icons/github.svg" alt="Github" /></a>
         </div>
         <div class="col">
-          <h1>CTD - Frontend I - Checkpoint III</h1>
+          <h1>CTD - Front End I - Checkpoint III</h1>
         </div>
       </section>
     </footer>

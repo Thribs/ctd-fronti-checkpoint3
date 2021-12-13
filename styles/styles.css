@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-align: center;
   scroll-behavior: smooth;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .container-fluid {
@@ -16,11 +17,28 @@
   width: 100vw;
   border: none;
   padding: 0;
+  z-index: 99;
 }
 
 .navbar-brand {
   font-family: 'Grechen Fuemen', cursive;
   font-size: 43px;
+}
+
+.aviao {
+  position: absolute;
+  top: 80vh;
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+.d-flex {
+  padding-bottom: 10px;
 }
 
 main {
@@ -35,7 +53,7 @@ main p {
 }
 
 .form-content {
-  background: url(/img/banner.png);
+  background: url(../img/banner.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +63,15 @@ main p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 90px 20px 20px;
 }
 
 .form-content form {
-  background: #32b1db;
-  width: 30%;
-  padding: 40px 20px;
+  background: rgba(50, 177, 219, 0.838);
+  color: white;
+  max-width: 500px;
+  width: 80vw;
+  padding: 20px;
   border-radius: 20px;
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 1.6rem;
@@ -73,10 +94,12 @@ main p {
 .form-content form .btn {
   font-size: 1.2em;
   font-weight: bold;
+  color: orange;
 }
 
 .banner {
-  background-image: url(/img/banner.jpg);
+  background-attachment: fixed;
+  background-image: url(ctd-fronti-checkpoint3/img/banner.jpg);
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
@@ -91,69 +114,161 @@ main p {
   padding-top: 80px;
 }
 
-.banner .detalhes {
-  background-color: rgba(119, 136, 153, 0.653);
-  width: 75vw;
-  height: 75vh;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.banner .card {
+  margin-top: 10vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: rgba(0, 0, 0, 0.701);
+  width: 90vw;
+  max-width: 600px;
+  padding: 5vw;
   border-radius: 20px;
 }
 
-.banner .detalhes h1 {
-  font-family: 'Grechen Fuemen', cursive;
-  font-size: 50px;
-  color: #2e2259;
-  background-color: rgba(80, 208, 250, 0.735);
-  padding: 20px;
+.banner .card .botao-banner {
+  margin-top: 20px;
+  background-color: rgba(244, 134, 0, 0.982);
   border-radius: 20px;
-  margin: 50px;
-}
-
-.banner .detalhes p {
-  font-family: 'Darker Grotesque', sans-serif;
   font-size: 24px;
-  padding: 20px;
-  margin: 50px;
-  border-radius: 20px;
-  color: #2e2259;
+  color: white;
+}
+
+.banner .card .banner-text {
   background-color: rgba(80, 208, 250, 0.735);
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.banner .card .banner-text h1 {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 30px;
+  color: white;
+  background-color: none;
+}
+
+.banner .card .banner-text p {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.167);
+  margin: 10px;
+}
+
+.aviao {
+  position: absolute;
+  top: 80vh;
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
 }
 
 .destinos {
   padding-top: 80px;
 }
 
-.figure-caption {
-  font-size: 20px;
+.destinos .figure {
+  background-color: rgba(0, 178, 254, 0.16);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.destinos .figure:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  padding: 50px 0;
+  -webkit-filter: saturate(4);
+          filter: saturate(4);
+}
+
+.destinos .figure:hover .card-text {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.destinos .figure-caption {
+  font-size: 24px;
+  color: #06b4ff;
+}
+
+.destinos .card-text {
+  padding: 0 10px;
+}
+
+.destinos .btn-primary {
+  background-color: rgba(80, 208, 250, 0.735);
+  color: #1a084d;
+  margin-bottom: 10px;
+}
+
+.surprise {
+  margin: 20px;
+}
+
+.btn-lg {
+  width: 90%;
+  max-width: 400px;
+  margin: 5px;
+  font-size: 32px;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(-80px, 0px);
+            transform: translate(-80px, 0px);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translate(100vw, -100vh);
+            transform: translate(100vw, -100vh);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(100vw, -100vh);
+            transform: translate(100vw, -100vh);
+    opacity: .5;
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(-80px, 0px);
+            transform: translate(-80px, 0px);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translate(100vw, -100vh);
+            transform: translate(100vw, -100vh);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(100vw, -100vh);
+            transform: translate(100vw, -100vh);
+    opacity: .5;
+  }
 }
 
 footer {
-  background: #000;
+  background: rgba(0, 0, 0, 0.818);
   width: 100%;
   padding: 20px 10px;
 }
 
-footer .student-showcase {
-  color: #b6b6b6;
-}
-
-footer .student-showcase h1 {
+footer h1 {
+  padding-top: 10px;
   font-size: 1.6rem;
   font-weight: 600;
+  color: rgba(213, 210, 210, 0.222);
 }
 
-@media (max-width: 1200px) {
-  p {
-    font-size: 16px;
-    font-family: 'Darker Grotesque', sans-serif;
-  }
+footer .student-showcase {
+  color: #b6b6b6;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

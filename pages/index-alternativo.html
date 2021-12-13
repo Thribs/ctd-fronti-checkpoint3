@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Darker+Grotesque:wght@500&family=Faster+One&family=Grechen+Fuemen&family=Happy+Monkey&family=Loved+by+the+King&family=Sedgwick+Ave+Display&display=swap');
+        </style>
+    <title>TripFix</title>
+  </head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">TripFix</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#destinos">Destinos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contato
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="mailto:contato@tripflix.com">Email</a></li>
+                      <li><a class="dropdown-item" href="https://wa.me/5511912345678" target="_blank" rel="noopener norefer">WhatsApp</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="contato.html?message=Quero+agendar+uma+visita">Agende uma visita</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Eventos (em breve)</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Destino" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+
+    <section class="banner" class="col-{breakpoint}-auto">
+      <ul class="caption-style-1">
+        <li>
+          <div class="caption">
+            <div class="blur"></div>
+            <div class="texto-abertura">
+              <h1>Para onde vamos viajar hoje?</h1>
+                  <p>
+                      Sabe quando você tem uma vontade enorme de viajar mas falta o tempo para se deslocar ou o dinheiro para comprar a passagem? Seus problemas acabaram! </br>
+                      <strong> Agora você pode visitar lugares incríveis sem sair do conforto da sua casa.</strong>
+                  </p>
+          </div>
+          </div>
+        </li>
+      </ul>
+    
+        
+      <div class="aviao">
+      <img src="./img/plane.png" alt="">
+      </div>
+        
+    </section>
+
+    <section class="destinos" id="destinos">
+      
+      <div class="col-{breakpoint}-auto"></div>
+      <ul class="caption-style-2 col-{breakpoint}-auto">
+        <li>
+          <figure class="figure">
+          <img src="img/Italia.jpg" class="figure-img img-fluid rounded" alt="...">
+          <div class="caption">
+            <div class="blur"></div>
+            <div class="caption-text">
+              <figcaption class="figure-caption">Dolomites, Itália
+              </figcaption>
+                <p class="card-text">Visite essas lindas montanhas no norte da Itália, Patrimônio Mundial da UNESCO.</p>
+              <a href="./pages/locales/dolomites.html" class="btn btn-primary">Viajar</a>
+          </div>
+        </figure>
+        </li>
+      </ul>
+    </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Italia.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Dolomites, Itália
+                </figcaption>
+                <div class="detalhes-botao">
+                <p class="card-text">Visite essas lindas montanhas no norte da Itália, Patrimônio Mundial da UNESCO.</p>
+              <a href="#" class="btn btn-primary">Viajar</a>
+              </div>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/NYC.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Nova York, EUA</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+    
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Grecia.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Anogeia, Grécia</figcaption>
+                <p class="card-text">Anogeia é uma vila montanhosa, que possui peculiares edificações conhecidas como mitata, construções em pedra similares a cabanas utilizadas como residências sazonais de pastores locais e como armazéns para queijo.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Chile.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption"> Torres de Paine, Chile</figcaption>
+                <p class="card-text">Torres del Paine é uma comuna da Patagônia Chilena, onde é possível encontrar desertos frios e secos, florestas e bosques de pinheiro, vales e rios, montanhas e principalmente, os glaciares. Na Patagônia há 4 tipos de clima: árido, frio, temperado e subártico.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/HongKong.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Hong Kong</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Tailandia.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Phi Phi Islands, Thailand</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Canada.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Lake Louise, Canada</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Arizona.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Grand Canyon, Arizona, EUA</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Suisse.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Saignelégier, Suíça</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Toquio.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Tóquio, Japão</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Noruega.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Bergen, Noruega</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+
+        <div class="col-{breakpoint}-auto">
+            <figure class="figure">
+                <img src="img/Cabo.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Cidade do Cabo, África do Sul</figcaption>
+                <p class="card-text">Com um horizonte conhecido em qualquer parte do mundo, há sempre algo novo para descobrir na cidade de Nova York, de locais famosos a tesouros ocultos.</p>
+                <a href="#" class="btn btn-primary">Viajar</a>
+              </figure>
+        </div>
+        
+        <a href="pages/locales/random.html">
+          <div class="col-sm-6 col-md-4">
+              <h1>Me surpreenda</h1>
+          </div>
+        </a>
+
+    </section>
+
+    <!-- Bootstrap & Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
